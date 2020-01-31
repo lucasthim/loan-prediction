@@ -7,3 +7,4 @@ seaborn
 tensorflow
 keras
 jupyter
+pandas-profiling[notebook,html]
