@@ -6,7 +6,7 @@ Loan Statistics and Loan Prediction Project using ML algorithms
 
 Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form.
 
-## Data
+## Data Dictionary
 
 
 Variable      -          Description
@@ -39,4 +39,4 @@ Loan_Status       -      Loan approved (Y/N)
 
 
 
-
+This dataset can be obtained in the following challenge: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/ 
