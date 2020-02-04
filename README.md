@@ -1,6 +1,6 @@
-# Loan Prediction (Under Development)
+# Loan Prediction
 
-Loan Statistics and Loan Prediction Project using ML algorithms
+The goal of this project is to develop some ML models to predict whether or not a loan application will be approved.
 
 ## Problem Estatement 
 
@@ -39,4 +39,8 @@ Loan_Status       -      Loan approved (Y/N)
 
 
 
+
+
 This dataset can be obtained in the following challenge: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/ 
+
+License __MIT__
