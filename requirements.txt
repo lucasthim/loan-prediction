@@ -6,5 +6,6 @@ matplotlib
 seaborn
 tensorflow
 keras
-jupyter
+jupyterlab
 pandas-profiling[notebook,html]
+
