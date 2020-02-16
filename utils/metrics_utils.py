@@ -7,6 +7,16 @@ from sklearn.metrics import confusion_matrix,recall_score, classification_report
 
 plt.style.use('seaborn')
 
+def evalute_model_performance(model,model_name,X,y,df_result):
+    plot_confusion_matrix(df_result,model_name)
+    acc_report = classification_report(df_result.TrueClass, df_result.Predicted,target_names =['Rejected', 'Approved'])
+    print(acc_report)
+    try:
+        plot_ROC(model, model_name, X, y)
+    except:
+        print('Could not print ROC AUC curve.')
+
+
 def plot_confusion_matrix(df,title,labels = ['Rejected', 'Approved'],set_type = 'Validation'):
     conf_matrix = confusion_matrix(df.TrueClass, df.Predicted)
     plt.figure(figsize=(8, 8))
@@ -17,9 +27,7 @@ def plot_confusion_matrix(df,title,labels = ['Rejected', 'Approved'],set_type = 
     plt.show()
     return conf_matrix.ravel()
 
-def show_performance(df,labels = ['Rejected', 'Approved']):
-    c = classification_report(df.TrueClass, df.Predicted,target_names =labels)
-    print(c)
+    
 
 def plot_ROC(model,model_name,X_test,y_test):
     
@@ -43,3 +51,5 @@ def plot_ROC(model,model_name,X_test,y_test):
     plt.ylabel('True Positive Rate')
     plt.legend()
     plt.show()
+    
+    
