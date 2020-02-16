@@ -14,6 +14,3 @@ def encode_with_nan(df_input,categorical_columns,ordinal_encoder):
         for index, label in enumerate(category):
             df.loc[df[col] == label,col] = index
     return df
-
-# def calculate_new_loan_variables(df):
-    
